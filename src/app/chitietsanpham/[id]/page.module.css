@@ -1,0 +1,218 @@
+.wrapper {
+    background-color: #fdfdfd;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    background: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #eef6ff;
+  }
+  
+  .navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .navLinks a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .memberBtn {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* CONTAINER */
+  .container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .mainCard {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    gap: 50px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+  }
+  
+  .imageSection {
+    flex: 1;
+  }
+  
+  .mainImageWrapper img {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #f0f0f0;
+  }
+  
+  .infoSection {
+    flex: 1;
+  }
+  
+  .breadcrumb {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 10px;
+  }
+  
+  .productName {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .priceRow {
+    background: #fdf5f6; /* Màu nền hồng nhạt nhẹ cho khu vực giá */
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .currentPrice {
+    font-size: 28px;
+    font-weight: 800;
+    color: #d0021b;
+  }
+  
+  .oldPrice {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .discountTag {
+    background: #d0021b;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .shortDesc {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .status span {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .orderRow {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .quantityBox {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  
+  .quantityBox button {
+    padding: 10px 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .quantityBox span {
+    padding: 0 10px;
+    font-weight: bold;
+  }
+  
+  .addCartBtn {
+    background: #eef6ff;
+    color: #4a90e2;
+    border: 2px solid #4a90e2;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .buyNowBtn {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  /* DETAIL BOX */
+  .detailBox {
+    background: white;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+  }
+  
+  .detailBox h3 {
+    border-bottom: 2px solid #4a90e2;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    color: #4a90e2;
+  }
+  
+  .detailBox h4 { margin-bottom: 15px; color: #333; }
+  .detailBox p { color: #666; margin-bottom: 15px; }
+  .detailBox ul { padding-left: 20px; color: #666; }
+  .detailBox li { margin-bottom: 10px; }
+  
+  .footer {
+    text-align: center;
+    padding: 40px;
+    color: #999;
+    font-size: 13px;
+  }
+  
+  @media (max-width: 850px) {
+    .mainCard { flex-direction: column; }
+    .orderRow { flex-wrap: wrap; }
+  }

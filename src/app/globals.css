@@ -1,0 +1,57 @@
+/* 1. RESET TRÌNH DUYỆT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  /* Giúp cuộn trang mượt mà hơn */
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Thiết lập font chữ chủ đạo */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #33475b;
+  line-height: 1.5;
+}
+
+/* 2. ĐỊNH NGHĨA MÀU SẮC DÙNG CHUNG (CSS Variables) */
+:root {
+  --primary-blue: #4a90e2;
+  --light-blue: #eef6ff;
+  --dark-blue: #1e3a8a;
+}
+
+/* 3. ĐỊNH DẠNG LINK */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 4. ĐỊNH DẠNG HÌNH ẢNH (Để không bị méo) */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 5. TÙY CHỈNH THANH CUỘN (Scrollbar) MÀU XANH CHO ĐẸP */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #4a90e2;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1e3a8a;
+}
